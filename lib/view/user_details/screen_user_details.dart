@@ -8,23 +8,22 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../Core/core.dart';
 import '../../model/model.dart';
 
-class screenUserDetails extends StatelessWidget {
+class ScreenUserDetails extends StatelessWidget {
   final double screenHeight;
   final double screenWidth;
   final Users users;
-  const screenUserDetails({
+  const ScreenUserDetails({
     super.key,
     required this.screenHeight,
     required this.screenWidth,
     required this.users,
   });
-
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        
       ),
       body: Center(
           child: Padding(

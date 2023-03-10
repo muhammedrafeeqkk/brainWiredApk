@@ -1,1 +1,1 @@
- const API_KeY= "https://jsonplaceholder.typicode.com/users";
+const API_KeY = "https://jsonplaceholder.typicode.com/users";

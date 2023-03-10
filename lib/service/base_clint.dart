@@ -8,14 +8,14 @@ import 'package:http/http.dart' as http;
 import '../model/model.dart';
 
 class BaseClint {
-  static const int TimeDuration = 20;
+  static const int timeDuration = 20;
 
   Future<dynamic> getData({required String url}) async {
     final uri = Uri.parse(url);
 
     try {
       final response =
-          await http.get(uri).timeout(Duration(seconds: TimeDuration));
+          await http.get(uri).timeout(const Duration(seconds: timeDuration));
 
       return _progressResponse(response: response);
     } on SocketException {

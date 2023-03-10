@@ -1,9 +1,7 @@
 import 'package:brain_wired_apk/Core/core.dart';
 import 'package:brain_wired_apk/model/model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 
 import '../../Core/colors.dart';
 import '../User_details/screen_user_details.dart';

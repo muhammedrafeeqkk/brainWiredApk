@@ -3,19 +3,14 @@ import 'package:brain_wired_apk/view/users/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class screenUsers extends StatelessWidget {
-  const screenUsers({super.key});
+class ScreenUsers extends StatelessWidget {
+  const ScreenUsers({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //calling datas in intial
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<FeatchingUserCubit>().fetch();
     });
-
-    final screenWidth = MediaQuery.of(context).size.width;
-    final screenHeight = MediaQuery.of(context).size.height;
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -30,7 +25,7 @@ class screenUsers extends StatelessWidget {
           child: BlocBuilder<FeatchingUserCubit, FeatchingUserState>(
             builder: (context, state) {
               if (state.isloading) {
-                return Center(
+                return const Center(
                   child: CircularProgressIndicator(),
                 );
               } else {
@@ -76,11 +71,11 @@ class screenUsers extends StatelessWidget {
 }
 
 
-//qubic.//
+//qubit//
 //http.get separate fuction 
-// run app nte munne flutter initialize
-//remove future builder.//
-//has code 300,400,500
+// run app nte munne flutter initialize//
+//remove future builder //
+//has code 300,400,500//
 //remove from json map
 //
 
