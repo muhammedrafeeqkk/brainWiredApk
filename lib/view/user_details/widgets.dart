@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../../Core/colors.dart';
 import '../../Core/core.dart';
-import '../../controller/services.dart';
+import '../../model/model.dart';
 
 Padding addressWidget({
   required double screenHeight,

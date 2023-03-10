@@ -1,5 +1,4 @@
 import 'package:brain_wired_apk/Core/colors.dart';
-import 'package:brain_wired_apk/controller/services.dart';
 import 'package:brain_wired_apk/view/map_screen/map_screen.dart';
 import 'package:brain_wired_apk/view/user_details/widgets.dart';
 
@@ -7,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../../Core/core.dart';
+import '../../model/model.dart';
 
 class screenUserDetails extends StatelessWidget {
   final double screenHeight;
